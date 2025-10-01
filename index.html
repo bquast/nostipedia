@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostipedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/nostr-tools@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search Nostipedia...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <main id="main-content">
+        <div id="article-container" class="single-view"></div>
+        <div id="compare-list" class="hidden"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

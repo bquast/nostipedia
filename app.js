@@ -1,7 +1,4 @@
-const pool = new window.nostrTools.SimplePool();
-
-const pool = new SimplePool();
-const defaultRelays = ['wss://relay.damus.io', 'wss://nos.lol'];
+const pool = new window.NostrTools.SimplePool();
 
 function normalizeDTag(str) {
     return str.toLowerCase().replace(/[^a-z]/g, '-');
@@ -150,7 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Close compare list on outside click
 document.addEventListener('click', (e) => {
     const list = document.getElementById('compare-list');
-    if (!list.contains(e.target) && !e.target.id === 'compare-button') {
+    if (!list.contains(e.target) && e.target.id !== 'compare-button') {
         list.classList.add('hidden');
     }
 });
+
+const defaultRelays = ['wss://relay.damus.io', 'wss://nos.lol'];

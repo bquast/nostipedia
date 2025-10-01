@@ -1,4 +1,4 @@
-const { SimplePool } = window.nostrTools; // From CDN
+const pool = new window.nostrTools.SimplePool();
 
 const pool = new SimplePool();
 const defaultRelays = ['wss://relay.damus.io', 'wss://nos.lol'];
